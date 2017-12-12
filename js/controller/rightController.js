@@ -58,7 +58,7 @@ app.controller('mainRightController', ['$scope', '$http', '$window', 'varData', 
 			content:[
 				{
 					name:'云服务器 ECS',
-					src:'/yun/ServiceECS',
+					src:'/ServiceECS',
 					ngClick:'',
 					icon:'icon-insert-template'
 				}

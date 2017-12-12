@@ -42,7 +42,7 @@ app.config(['$provide', '$routeProvider', '$controllerProvider', '$compileProvid
 
 	$routeProvider.
 	when('/', {
-		templateUrl:'/yun/views/rightHtml.html',
+		templateUrl:'/views/rightHtml.html',
 		controller:'mainRightController'
 	}).
 	otherwise({

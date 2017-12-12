@@ -1,5 +1,5 @@
 app.controller('mainLeftController', ['$scope', '$http', '$window', 'varData', function(s, h, w, d){
-	s.leftHtml = '/yun/views/leftHtml.html'
+	s.leftHtml = '/views/leftHtml.html'
 	s.setRightHtml = function(h){
 		d.rightHtml = h+'.html'
 		s.$emit('setRightHtml', h);

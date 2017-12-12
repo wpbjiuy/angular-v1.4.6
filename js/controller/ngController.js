@@ -36,7 +36,7 @@ app.controller('zmController', ['$scope', '$http', '$window', 'varData', 'addhtm
 }])
 
 app.controller('headerController', ['$scope', '$http', '$window', 'varData', function(s, h, w, d){
-	s.headerHtml = '/yun/views/headerHtml.html'
+	s.headerHtml = '/views/headerHtml.html'
 	s.username = 'admin'
 	s.logout = function(){
 		console.log('退出')
