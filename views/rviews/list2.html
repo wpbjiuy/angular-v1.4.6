@@ -1,0 +1,42 @@
+<div class="zt">
+	<div class="ztTop">
+		<div class="fl ttl">
+			<h2>列表2</h2>
+		</div>
+		<div class="fr ctrlBox">
+			<div class="tCtrl">
+				<span class="btn_1" ng-click="createData()">新建</span>
+			</div>
+			<div class="sCtrl">
+				<div class="searchBox">
+					<input type="text" class="scInput" ng-model="searchData.name" />
+					<span class="searchGo">GO</span>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+	</div>
+	<div class="ztMain">
+		<table class="tb1">
+			<tr>
+				<th ng-click="setOrderBy('name')">名字z <i ng-class="{true:'icon-sort-alpha-desc',false:'icon-sort-alpha-asc'}[tbItemsByTrue]"></i></th>
+				<th ng-click="setOrderBy('age')">年龄z <i ng-class="{true:'icon-sort-numberic-desc',false:'icon-sort-numberic-asc'}[tbItemsByTrue]"></i></th>
+				<th ng-click="setOrderBy('man')">性别z <i ng-class="{true:'icon-sort-alpha-desc',false:'icon-sort-alpha-asc'}[tbItemsByTrue]"></i></th>
+				<th class="ctrl">操作</th>
+			</tr>
+			<tr ng-init="ctrlShow = false" ng-repeat="tbItem in tbItems | orderBy : tbItemsBy : tbItemsByTrue" ng-class="$index%2==0?'bg':''">
+				<td ng-bind="tbItem.name"></td>
+				<td ng-bind="tbItem.age"></td>
+				<td ng-bind="tbItem.man"></td>
+				<td class="ctrl" ng-class="ctrlShow?'on':''" ng-mouseleave="ctrlShow = false">
+					<span class="ctrlBtn" ng-click="ctrlShow = !ctrlShow"><i ng-class="!ctrlShow?'icon-menu3':'icon-menu4'"></i></span>
+					<ul class="ctrlList" ng-show="ctrlShow">
+						<li><a class="btn" href="javascript:void(0);" ng-click="ctrlShow = !ctrlShow">修改</a></li>
+						<li><a class="btn" href="javascript:void(0);" ng-click="ctrlShow = !ctrlShow">删除</a></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		<div id="pageBox" class="pageBox"></div>
+	</div>
+</div>

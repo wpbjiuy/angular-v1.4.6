@@ -1,0 +1,196 @@
+.listhide{background-color: RGBA(0, 0, 0, 0.49);display: none;}
+.listhide a{display:block;padding:5px 15px 5px 8px;color: #eee;white-space: nowrap;}
+.listhide a:hover{background-color:#d4e3ea;color:#555;}
+
+.addsvz{width: 140px;position: relative;z-index: 1;}
+.addsvz .linkBtn{border: 1px solid #30B2CE;text-align: center;}
+.addsvz .linkBtn a{display: inline-block;padding: 0 8px;width: 85px;}
+.addsvz .linkBtn a.showSelect{border-left: 1px solid #30B2CE;width: 15px;text-align:center;}
+.addsvz .linkBtn a.showSelect:hover{background-color:#f1f1f1;}
+.addsvz .linkBtn a.showSelect:active{background-color:#fefefe;}
+.addsvz .linkBtnSelect{width: 160px;position: absolute;top: 100%;right: 0;z-index: 2;background-color: RGBA(0, 0, 0, 0.49);display: none;}
+.addsvz .linkBtnSelect a{display: block;padding: 0 8px;color: #eee}
+.addsvz .linkBtnSelect a:hover{background-color:#d4e3ea;color:#555;}
+
+.cslBox{position:relative;z-index:1;}
+.cslBox .startOrStop{margin-right:5px;padding-right:5px;border-right:1px solid #777;}
+.cslBox .cslShow{display:block;text-align:center;}
+.cslBox .cslList{position:absolute;top:110%;right:0;*width:120px;min-width:100%;border-top:1px solid #ddd;}
+.cslBox .cslList i{margin-right:5px;}
+.cslBox .cslList a{}
+
+.tcTtll{width:99%;margin: 0 auto 5px;font-size: 17px;height: 30px;line-height: 30px;border-bottom: 2px solid #DD9E2C;color: #189AB6;font-weight: 600;}
+.tcUl{width:99%;margin:auto;padding-bottom: 15px;}
+.tcUl li{border-bottom: 1px solid #B2CCDF;line-height: 28px;padding: 5px 10px;transition: background 0.4s ease;}
+.tcUl li:hover{background-color:#ffc;}
+.tcUl li .ioc-box{margin-right:15px;}
+.tcUl li .mbName{margin-right:20px;width: 150px;color:#666;}
+.tcUl li .dp{font-size:12px;color:#888;*width:200px;max-width:200px;display: inline-block;}
+.tcUl li .remove{margin-left: 8px;color: #DB1F1F;}
+.tcUl li select{height: 26px;}
+.tcUl li .btn_c{line-height:25px;font-size:12px;}
+.tcTtll .btn_1,.tcUl li .btn_1{width:auto;height:28px;line-height:28px;font-size:16px;}
+
+.mdLists{width:100%;}
+.mdListInfo{margin-bottom: 10px;}
+.mdListInfo .mdListHeader{background-color: #e2eff9;padding:10px 10px 10px 50px;height:28px;line-height:28px;position: relative;}
+.mdListInfo .mdlistChilder{background-color: #eef7fb;display: none;}
+.mdListInfo .mdListHeader a{color:#666;}
+.mdListInfo .mdListHeader .listhide{background-color: RGBA(0, 0, 0, 0.49);display: none;}
+.mdListInfo .mdListHeader .listhide a{display:block;padding:0 8px;color: #eee;}
+.mdListInfo .mdListHeader .listhide a:hover{background-color:rgba(216, 228, 232, 0.78);color:#555;}
+
+.mdListInfo .mdlistChilder .tcTtll{}
+.mdListInfo .mdlistChilder .tcUl{}
+.mdListInfo .mdlistChilder .tcUl li{}
+.mdListInfo .mdlistChilder .tcUl li .ioc-box{margin-left:35px;color:#189ab6;}
+.mdListInfo .mdlistChilder .tcUl li .state{color:#fff;font-size: 14px;margin-top: 4px;margin-right:15px;padding:0 5px;height: 22px;line-height: 22px; transition: background 0.8s;}
+.mdListInfo .mdlistChilder .tcUl li .state.cls_0{background-color:#D55A5A;}
+.mdListInfo .mdlistChilder .tcUl li .state.cls_1{background-color:#4AC3C8;}
+.mdListInfo .mdlistChilder .tcUl li .state.cls_2{background-color:#54A66E;}
+.mdListInfo .mdlistChilder .tcUl li .state.cls_3{background-color:#BFD279;}
+.mdListInfo .mdlistChilder .tcUl li .mbName{}
+.mdListInfo .mdlistChilder .tcUl li .mbName a{margin-left:5px;color:#108ACA;}
+.mdListInfo .mdlistChilder .tcUl li .mbName a:hover{color:#caac10;}
+.mdListInfo .mdlistChilder .tcUl li .mbName a:active{color:#0b83b3;}
+.mdListInfo .mdlistChilder .tcUl li .mbName .dp{margin-left:10px;color:#777;}
+.mdListInfo .mdlistChilder .tcUl li .remove{}
+.mdListInfo .mdlistChilder .tcUl li select{}
+.mdListInfo .mdlistChilder .tcUl li .btn_c{}
+.mdListInfo .mdlistChilder .tcUl li .state .whirl{line-height:inherit;margin-right:2px;}
+
+.mdListInfo .mdListHeader .bor{margin-right:5px;}
+.mdListInfo .fr{margin-left:5px;color:#666;}
+.mdListInfo .mdListHeader a.fr,.mdListInfo .btn_c{padding:1px 5px;}
+.mdListInfo .mdListHeader .onBtn{background-color:#30B2CE;color:#fff;}
+
+.mdListInfo span[data-sync='true']{background-color: #01C3BC; color: #fff !important;}
+.mdListInfo span[data-sync='false']{color:#fff; border-color:#C59D00;background-color: #DBB804;}
+
+.mdListInfo .mdListHeader .ioc-box{padding:0 15px;position: absolute;left: 0;top: 0;height: 100%;line-height: 54px;}
+.mdListInfo .mdListHeader .ioc-box i{color: #189ab6; font-size:20px;}
+.mdListInfo .mdListHeader .showChilder{}
+.mdListInfo .mdListHeader .showChilder a{font-size:20px;color: #D5AF19;}
+.mdListInfo .mdListHeader .showChilder a.icon-folder-open{color:#189ab6;}
+.mdListInfo .mdListHeader .mdName{margin-left:15px;width:40%;}
+.mdListInfo .mdListHeader .mdName a{color: #444;font-size:18px;}
+.mdListInfo .mdListHeader .mdName .describe{margin-left:5%;color:#999;font-size:14px;}
+.mdListInfo .mdListHeader .mdName span{width:45%;display:inline-block;}
+
+.mdListInfo .mdListHeader .thsType{color:#fff;background-color:#30B2CE;width:40px;text-align:center;border-radius:10px;}
+.mdListInfo .mdListHeader .thsType.bg2{background-color:#2C86C7;}
+.mdListInfo .mdListHeader .tLef{position:absolute;left:10px;}
+
+.mdListInfo .mdListHeader .qHint{margin-left:10px;width:172px;text-align:right;}
+.mdListInfo .mdListHeader .qHint strong{color:#967110;font-size:1.2em;display:inline-block;}
+
+.mdListInfo .mdListHeader .asNum{width: 100px;text-align:center;border-right: 1px solid #30B2CE;}
+.mdListInfo .mdListHeader .asNum p{width:100%;line-height:15px;text-align: center;}
+
+.mdListInfo .mdListHeader .addsvz{}
+.mdListInfo .mdListHeader .addsvz .linkBtn{}
+.mdListInfo .mdListHeader .addsvz .linkBtn a{}
+.mdListInfo .mdListHeader .addsvz .linkBtn a.showSelect{}
+.mdListInfo .mdListHeader .addsvz .linkBtn a.showSelect:hover{background:none;}
+.mdListInfo .mdListHeader .addsvz .linkBtn a.showSelect:active{}
+.mdListInfo .mdListHeader .addsvz .linkBtnSelect{width:auto;min-width:100%;}
+.mdListInfo .mdListHeader .addsvz .linkBtnSelect a{}
+.mdListInfo .mdListHeader .addsvz .linkBtnSelect a:hover{}
+
+.mdListInfo .mdListHeader .cslBox{border: 1px solid #30B2CE;}
+.mdListInfo .mdListHeader .cslBox .startOrStop{margin-right:5px;padding-right:5px;border-right: 1px solid #30B2CE;}
+.mdListInfo .mdListHeader .cslBox .cslShow{}
+.mdListInfo .mdListHeader .cslBox .cslShows{color:#189ab6;}
+.mdListInfo .mdListHeader .cslBox .cslList{}
+.mdListInfo .mdListHeader .cslBox .cslList i{}
+.mdListInfo .mdListHeader .cslBox .cslList a{}
+
+.mdListInfo .mdListHeader .isEdit{margin-right:8px;}
+
+.mdListInfo .mdListHeader a:hover{color:#3795a1;}
+
+/*栈*/
+.ltm{margin-right:15px;width:100px;text-align:center;font-size:14px;border-right:1px solid #ddd;}
+.mdListInfo .localService{color: #097752;}
+.mdListInfo .loadBalancer{color: #124993;}
+.mdListInfo .exterService{color: #988B0A;}
+
+/*--日记列表--*/
+.dyLists{margin-bottom:10px;}
+.dyLists table{width:100%;font-size:14px;}
+.dyLists table tr{}
+
+.dyLists table th,.dyLists table td,table.tblist_2 th,table.tblist_2 td{border-bottom: 1px solid #D2E9EA;border-right: 1px solid #D2E9EA;padding:5px;}
+.dyLists table th,table.tblist_2 th{white-space: nowrap;overflow:hidden;text-overflow: ellipsis;border-top: 1px solid #30B2CE;border-color:#30B2CE;background-color: #D3E7F7;color: #2C92DD;}
+.dyLists table td{text-align:center;}
+.dyLists table tr .last,table.tblist_2 tr .last{border-right:none;text-align:center;}
+.dyLists table td .btnA{color: #2287D0;}
+.dyLists table td .btnA:hover{color: #BCC809;}
+.dyLists table td .btnA:active{color: #0F72BA;}
+.dyLists table .t1{}
+.dyLists table .t2{}
+.dyLists table .t3{text-align:left;}
+.dyLists table .t4{}
+.dyLists table .t5{}
+.dyLists table .t6{width:85px;}
+.dyLists table .t7{}
+
+.dyLists table th.t3{text-align:center;}
+
+tr.bg1{background-color: #ECF4F7;}
+tr:hover{background-color:#E2F1FC;}
+tr:first-child:hover{background-color:#fff;}
+tr:first-child th [class^="icon-"]{opacity:0;transition:all 0.4s;}
+tr:first-child th:hover [class^="icon-"]{opacity:1}
+
+/*--tblist_1-*/
+table.tblist_1{border-collapse:collapse;}
+table.tblist_1 th{}
+
+/*--tblist_2-*/
+table.tblist_2{border-collapse:collapse;width:100%;margin-bottom:10px;}
+table.tblist_2 tr{height:32px;}
+table.tblist_2 th{text-align:left;font-weight:500;}
+table.tblist_2 td{color:#555; word-break:break-all;}
+table.tblist_2 .last{text-align:center;}
+
+/*--重置样式--*/
+.seLists .mdListInfo .mdListHeader{padding:5px;padding-left: 50px;}
+.seLists .mdListInfo .mdListHeader .ioc-box{line-height:40px;}
+
+/*---服务列表---*/
+.svLists{}
+.svLists table{width:100%;border-collapse:collapse;border-spacing:0;}
+.svLists table tr{height: 40px;border-top: 1px solid #30B2CE;border-bottom: 1px solid #30B2CE;}
+.svLists table tr.bg1{}
+.svLists table tr td{border-right: 1px solid #30B2CE;text-align: center;}
+.svLists table tr .t1{color: #006E77;}
+.svLists table tr .t2{text-align: left;  padding: 0 5px;}
+.svLists table tr .t3{text-align: left;padding: 0 5px;}
+.svLists table tr .t4{width: 100px;}
+.svLists table tr .t5{width: 100px;}
+.svLists table tr .t6{width: 50px;border-right: 0;padding-right:10px;}
+
+
+/*--一行两列表--*/
+.t2Lists{}
+.t2Lists .list{width:47%;float:left;margin-right:4%;margin-bottom:15px;}
+.t2Lists .list .ttl{height:32px;line-height:32px;font-size:18px;background-color: #3E77B8;text-indent:8px;color: #fff;}
+.t2Lists .list .infos{background-color: #83C0C5;}
+.t2Lists .list .infos .actv{padding:0 5px;width:50px;color: #fff;font-size: 20px;}
+
+.t2Lists .listMg0{margin-right:0;}
+
+.boxcel.borderBox.actv {}
+.t2Lists .list .infos .info{border-left:1px solid #ddd;border-right:1px solid #ddd;text-indent:8px;line-height:25px;}
+.t2Lists .list .infos .info .foh{border-bottom:1px solid #ddd;}
+.t2Lists .list .infos .info .fop{}
+.t2Lists .list .infos .cslBox{width:50px;padding:0;}
+.t2Lists .list .infos .cslBox .cslShow {position:absolute;top:0;left:0;display:block;width:100%;height:100%;
+	text-align:center;line-height: 53px;font-size:25px;}
+.t2Lists .list .infos .cslBox .cslShows{color:#189ab6;}
+.t2Lists .list .infos .cslBox .cslList{top:100%;}
+.t2Lists .list .infos .actv i{position:relative;top:14px;left:10px;}
+.t2Lists .list .infos i.atcBlur{background-color: #2F9ECF;}
+.t2Lists .list .infos i.atcYlw{background-color: #EFC800;}
+.t2Lists .list .infos i.atcRed{background-color: #f00;}

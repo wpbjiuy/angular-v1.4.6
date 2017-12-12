@@ -1,0 +1,73 @@
+<div class="col-sm-12 zt pd borderBox dataViews">
+	<div class="gHint">
+		<p>fdjfdsafjdjflsadjflsadlfsadjfldjsfljasdlflsadjasfjsda dsfjdsa lfj alf</p>
+	</div>
+	<div class="bod_1 op">
+		<span class="btnLineText txt">
+			您目前共有<span> 0 </span>个实列， 其中<span> 0 </span>个运行中，<a href="/"><span> 0 </span>个过期.</a>
+		</span>
+		<span class="fr btn_0"><i class="icon-loop2"></i> 刷新</span>
+		<span class="fr btn_0"><i class="icon-loop"></i> 继续续费</span>
+		<span class="fr btn_0 first"><i class="icon-cog"></i> 设置</span>
+		<div class="clr"></div>
+	</div>
+	<div class="showfa">
+		<h3 class="title_1">安全预览</h3>
+		<div class="txtEllipsis txtImgLr">
+			<span class="col-sm-3 col-sm-offset-1 statusIconA"><span class="statusIconABgImg" ng-style="false?{'background-position-x':0}:''"></span>云服务器：<span class="status">正常</span></span>
+			<div class="col-sm-8 inlenTxt">
+				<ul>
+					<li class="col-sm-3"><i ng-class="true?'icon-check-alt':'icon-x-altx-alt'"></i>DDoS防护</li>
+					<li class="col-sm-3"><i ng-class="!true?'icon-check-alt':'icon-x-altx-alt'"></i>主机防护</li>
+					<li class="col-sm-3"><i ng-class="true?'icon-check-alt':'icon-x-altx-alt'"></i>应用防火墙</li>
+					<li class="col-sm-3"><i ng-class="true?'icon-check-alt':'icon-x-altx-alt'"></i>安全体检</li>
+				</ul>
+			</div>
+			<div class="clr"></div>
+		</div>
+	</div>
+	<div class="showDk">
+		<h3 class="title_1">我的资源</h3>
+		<div class="row">
+			<div class="col-sm-6 list" ng-repeat="item in zArea">
+				<div class="bod_1 dataBox_1">
+					<h3 class="bod_1 ttl">{{item}}</h3>
+					<div class="dataInfo">
+						<ul class="fl dataKey">
+							<li><a href="">云服务器<span>0</span></a></li>
+							<li><a href="">全部磁盘<span>0</span></a></li>
+							<li><a href="">全部快照<span>0</span></a></li>
+							<li><a href="">全部镜像<span>0</span></a></li>
+						</ul>
+						<div class="fl dataLink">
+							<ul class="fl left">
+								<li class="bod"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<ul class="fl right">
+								<li class="bod"></li>
+								<li class="bod"></li>
+								<li class="bod"></li>
+								<li class="bod"></li>
+							</ul>
+							<div class="clr"></div>
+						</div>
+						<ul class="fl dataValue">
+							<li class="active"><i class="icon"></i><a href="">运行中<span>0</span></a></li>
+							<li class="stop"><i class="icon"></i><a href="">即将过期<span>0</span></a></li>
+							<li class="stop"><i class="icon"></i><a href="">已过期<span>0</span></a></li>
+							<li class="new"><i class="icon"></i><a href="">近期创建<span>0</span></a></li>
+						</ul>
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="showDk">
+		<h3 class="title_1">其它资源</h3>
+		
+	</div>
+</div>

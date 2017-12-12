@@ -1,0 +1,42 @@
+<h3 class="cc_0 wlc">欢迎来到云平台！</h3>
+
+<div class="index_0">
+	<div class="left_box">
+		<div class="cc_0 mgB-ins">
+			<h3 class="title_0 title_bb">最近操作</h3>
+			<ul class="dataLists_0">
+				<li class="list" ng-repeat="item in [1,2,3,4,5,6]">最近操作 {{item}}</li>
+			</ul>
+		</div>
+		<div class="cc_0 mgB-ins">
+			<h3 class="title_0 title_bb">我的服务</h3>
+			<ul class="dataLists_0">
+				<li class="list" ng-repeat="item in [1,2,3,4,5,6]">我的服务 {{item}}</li>
+			</ul>
+		</div>
+		<div class="cc_0">
+			<h3 class="title_0 title_bb">我的产品</h3>
+			<div class="row">
+				<div class="col-sm-4" ng-repeat="productInfo in productInfos" ng-if="productInfo.length > 0">
+					<div class="listsT" ng-repeat="products in productInfo" ng-if="products.content.length > 0">
+						<h4 class="ttl">{{products.name}}</h4>
+						<ul>
+							<li ng-repeat="product in products.content">
+								<a href="{{product.src}}"><i class="{{product.icon}}"></i> {{product.name}} </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="right_box">
+		<div class="cc_0">
+			<h3 class="title_0 title_bb">安全知识</h3>
+			<ul class="dataLists_0">
+				<li class="list" ng-repeat="item in [1,2,3,4,5,6]">安全知识 {{item}}</li>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,386 @@
+/*---主机---*/
+//编辑维护更改记录
+var textarea1_html = createHtml.fnEditInputHtml('编辑维护更改记录', '提交更改', [
+	[
+		{
+			name:'变更内容',
+			html:'<textarea class="bdcol borderBox textarea1" data-name="changeContent"></textarea>'
+		}
+	]
+])
+
+//修改主机
+var hostEdit_html = createHtml.fnEditInputHtml('更新主机信息', '提交修改', [
+	{
+		isChunk:true,
+		TheDivider:'主机基本信息',
+		content:[
+			[
+				{
+					name:'区域',
+					type:'text',
+					placeholder:'请输入区域名称',
+					dataName:'area',
+					required:true
+				}
+			],
+			[
+				{
+					name:'服务器名称',
+					type:'text',
+					placeholder:'请输入服务器名称',
+					dataName:'hostName',
+					required:true
+				},
+				{
+					name:'服务器用途',
+					type:'text',
+					placeholder:'请输入服务器用途',
+					dataName:'purpose',
+					required:true
+				}
+			],
+			[
+				{
+					name:'IP地址',
+					type:'text',
+					placeholder:'请输入IP地址',
+					dataName:'hostIp',
+					required:true
+				},
+				{
+					name:'操作系统',
+					type:'text',
+					placeholder:'请输入操作系统',
+					dataName:'systemOS',
+					required:true
+				}
+			]
+		]
+	},
+	{
+		isChunk:true,
+		TheDivider:'主机硬件参数',
+		content:[
+			[
+				{
+					name:'硬件配置：',
+					type:'text',
+					placeholder:'请输入硬件配置',
+					dataName:'hardwareParameter',
+					required:true
+				}
+			]
+		]
+	},
+	{
+		isChunk:true,
+		TheDivider:'主机管理信息',
+		content:[
+			[
+				{
+					name:'负责人',
+					type:'text',
+					placeholder:'请输入负责人',
+					dataName:'personInCharge',
+					required:false
+				},
+				{
+					name:'后备管理员',
+					type:'text',
+					placeholder:'请输入后备管理员',
+					dataName:'secManager',
+					required:false
+				}
+			],
+			[
+				{
+					name:'机柜位置',
+					type:'text',
+					placeholder:'请输入机柜位置',
+					dataName:'hostPosition',
+					required:false
+				},
+				{
+					name:'交换机端口',
+					type:'text',
+					placeholder:'请输入交换机端口',
+					dataName:'switchAndPort',
+					required:false
+				}
+			],
+			[
+				{
+					name:'厂商',
+					type:'text',
+					placeholder:'请输入厂商',
+					dataName:'manufacturer',
+					required:false
+				},
+				{
+					name:'型号',
+					type:'text',
+					placeholder:'请输入型号',
+					dataName:'modelNumber',
+					required:false
+				}
+			],
+			[
+				{
+					name:'供应商',
+					type:'text',
+					placeholder:'请输入供应商',
+					dataName:'provider',
+					required:false
+				},
+				{
+					name:'安装日期',
+					type:'date',
+					placeholder:'请输入安装日期',
+					dataName:'installTime',
+					required:false
+				}
+			],
+			[
+				{
+					name:'设备序列号',
+					type:'text',
+					placeholder:'请输入设备序列号',
+					dataName:'deviceSerializeNum',
+					required:false
+				},
+				{
+					name:'资产编号',
+					type:'text',
+					placeholder:'请输入资产编号',
+					dataName:'assetNum',
+					required:false
+				}
+			],
+			[
+				{
+					name:'实物分类',
+					type:'text',
+					placeholder:'请输入实物分类',
+					dataName:'entityType',
+					required:false
+				},
+				{
+					name:'维保服务类型',
+					type:'text',
+					placeholder:'请输入维保服务类型',
+					dataName:'tendServiceType',
+					required:false
+				}
+			],
+			[
+				{
+					name:'维护起始时间',
+					type:'date',
+					placeholder:'请输入维护起始时间',
+					dataName:'tendingStartTime',
+					required:false
+				},
+				{
+					name:'维护结束时间',
+					type:'date',
+					placeholder:'请输入维护结束时间',
+					dataName:'tendingEndTime',
+					required:false
+				}
+			]
+		]
+	},
+	{
+		isChunk:true,
+		TheDivider:'硬盘',
+		content:[
+			[
+				{
+					name:'',
+					dataTypeZ:'arrayObj',
+					html:'<a href="javascript:void(0)" id="addHardDisk" class="addMOv" data-addName="hardDisk"><i class="icon icon-plus"></i>添加硬盘</a>',
+					required:false
+				}
+			]
+		]
+	},
+	{
+		isChunk:true,
+		TheDivider:'网卡',
+		content:[
+			[
+				{
+					name:'',
+					dataTypeZ:'arrayObj',
+					html:'<a href="javascript:void(0)" id="addNetworkCard" class="addMOv" data-addName="networkCard"><i class="icon icon-plus"></i>添加网卡</a>',
+					required:false
+				}
+			]
+		]
+	},
+	{
+		isChunk:true,
+		TheDivider:'内存',
+		content:[
+			[
+				{
+					name:'',
+					dataTypeZ:'arrayObj',
+					html:'<a href="javascript:void(0)" id="addMemory" class="addMOv" data-addName="memory"><i class="icon icon-plus"></i>添内存</a',
+					required:false
+				}
+			]
+		]
+	},
+	{
+		isChunk:true,
+		TheDivider:'网络存储',
+		content:[
+			[
+				{
+					name:'',
+					dataTypeZ:'arrayObj',
+					html:'<a href="javascript:void(0)" id="addMetworkStorage" data-addName="networkStorage"><i class="icon icon-plus"></i>添加网络存储</a>',
+					required:false
+				}
+			]
+		]
+	},
+	{
+		isChunk:true,
+		TheDivider:'标签',
+		content:[
+			[
+				{
+					name:'',
+					dataTypeZ:'arrayObj',
+					html:'<a href="javascript:void(0)" id="addLable"><i class="icon icon-plus"></i>添加标签</a>',
+					required:false
+				}
+			]
+		]
+	}
+])
+
+/*---项目---*/
+//创建项目
+var createProjcet_html = createHtml.fnEditInputHtml('新建项目', '创建', [
+	[
+		{
+			name:'模块名称',
+			html:'<select class="bdcol" id="slcMd" data-name="moduleId"></select>'
+		},
+		{
+			name:'资源库类型',
+			type:'select',
+			dataName:'repositoryType',
+			slcAr:[
+				{value:'git',name:'git'},
+				{value:'svn',name:'svn'}
+			]
+		}
+	],
+	[
+		{
+			name:'名称',
+			type:'text',
+			placeholder:'请输入项目名称',
+			dataName:'projectName',
+			required:false
+		}
+		// {
+		// 	name:'地址',
+		// 	type:'text',
+		// 	placeholder:'请输入SVN根目录后的地址',
+		// 	dataName:'httpUrl',
+		// 	style:'display:none;',
+		// 	verify:'RE2',
+		// 	fix:true,
+		// 	required:false
+		// }
+	]
+])
+
+//创建项目分支(git)
+var createProjcetBranch_html = createHtml.fnEditInputHtml('新建分支', '创建', [
+	[
+		{
+			name:'分支名称',
+			type:'text',
+			placeholder:'请输入分支名称',
+			dataName:'branchName',
+			required:true
+		},
+		{
+			name:'源分支名陈',
+			type:'text',
+			placeholder:'请输入源分支名陈',
+			dataName:'fromBranchName',
+			required:false
+		}
+	]
+])
+
+//创建项目目录(svn)						
+var createProjcetCatalogue_html = createHtml.fnEditInputHtml('新建目录', '创建', [
+	[
+		{
+			name:'SVN目录地址',
+			type:'text',
+			placeholder:'请根据根目录地址，输入SVN目录地址',
+			dataName:'httpUrl',
+			required:true
+		}
+	]
+])
+
+
+//项目添加成员
+var createProjcetAuthorization_html = createHtml.fnEditInputHtml('添加成员', '添加', [
+	[
+		{
+			name:'成员名称',
+			type:'text',
+			placeholder:'请输入成员名称',
+			dataName:'username',
+			required:true
+		},
+		{
+			name:'描述',
+			type:'select',
+			dataName:'accessLevel',
+			slcAr:[
+				{value:10, name:'Guest'},
+				{value:20, name:'Reporter'},
+				{value:30, name:'Developer'},
+				{value:40, name:'Master'}
+			]
+		}
+	]
+])
+
+/*---用户管理----*/
+//新增用户组
+var createUserGroup_html = createHtml.fnEditInputHtml('新增组', '新增', [
+	[
+		{
+			name:'名称*',
+			type:'text',
+			placeholder:'请输入组名称',
+			dataName:'name',
+			required:true
+		},
+		{
+			name:'描述',
+			type:'text',
+			placeholder:'请输入组描述',
+			dataName:''
+		}
+	],
+	{
+		dataName:'members',
+		dataType:'array',
+		html:'<div class="TheDivider"><a class="test addInputTabel" href="javascript:void(0)"><i class="icon icon-plus"></i>添加成员</a></div>'
+	}
+])

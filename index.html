@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta http-equiv="Content-type" content="application/json" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>云管理平台</title>
+	<!-- <link rel="Shortcut Icon" href="images/favicon.ico" type="image/x-icon" /> -->
+	<link rel="stylesheet" type="text/css" href="lib/css/style-icon.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.slice.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/listpage.css">
+	<link rel="stylesheet" type="text/css" href="css/last.css">
+	<script type="text/javascript" src="lib/js/jquery-2.2.3.min.js"></script>
+</head>
+<body id="index" ng-controller="zmController">
+
+	<header id="header" class="header" ng-controller="headerController"></header>
+	<script type="text/javascript" src="/yun/js/public/header.js"></script>
+
+	<main id="main" class="main" ng-controller="mainController">
+		<div class="main-left" ng-class="isZoom?'closeUp':''" ng-controller="mainLeftController"></div>
+		<script type="text/javascript" src="/yun/js/public/nav.js"></script>
+
+		<div class="main-right" ng-class="isZoom?'closeUp':''" ng-view=""></div>
+
+	</main>
+
+	<footer id="foolter" class="foolter" ng-include="foolter"></footer>
+
+	<script type="text/javascript" src="lib/js/angularjs-1.4.6.min.js"></script>
+	<script type="text/javascript" src="lib/js/angular-route-1.3.13.js"></script>
+	<script type="text/javascript" src="lib/js/angular-animate.min.js"></script>
+	<script type="text/javascript" src="js/public/common.js"></script>
+	<script type="text/javascript" src="js/fncm/fn-info.js"></script>
+	<script type="text/javascript" src="js/fncm/page.js"></script>
+	<script type="text/javascript" src="js/fncm/createHtml.js"></script>
+	<script type="text/javascript" src="/yun/js/public/last.js"></script>
+	
+	<script type="text/javascript" src="js/ngApp/app.js"></script>
+	<script type="text/javascript" src="js/ngApp/ngConfig.js"></script>
+	<script type="text/javascript" src="js/ngApp/provider.js"></script>
+	<script type="text/javascript" src="js/controller/ngController.js"></script>
+	<script type="text/javascript" src="js/controller/leftController.js"></script>
+	<script type="text/javascript" src="js/controller/rightController.js"></script>
+	
+</body>
+</html>
